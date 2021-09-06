@@ -15,7 +15,7 @@ by adding `ex_sqlean` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ex_sqlean, "~> 0.8.3"}
+    {:ex_sqlean, "~> 0.8.4"}
   ]
 end
 ```
