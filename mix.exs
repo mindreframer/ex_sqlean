@@ -6,8 +6,11 @@ defmodule ExSqlean.MixProject do
       app: :ex_sqlean,
       version: "0.8.3",
       elixir: "~> 1.12",
+      deps: deps(),
+      package: package(),
+      source_url: "https://github.com/mindreframer/ex_sqlean",
+      description: "Precompiled SQLite extensions, to be used with `exqlite`.",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
     ]
   end
 
@@ -18,9 +21,17 @@ defmodule ExSqlean.MixProject do
     ]
   end
 
+  defp package() do
+    [
+      # These are the default files included in the package
+      files: ~w(lib priv .formatter.exs mix.exs README* LICENSE*),
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/mindreframer/ex_sqlean"}
+    ]
+  end
+
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    [
-    ]
+    []
   end
 end
