@@ -9,11 +9,11 @@ defmodule ExSqlean.CpuInfo do
   """
   @spec fullinfo :: {atom(), binary()}
   def fullinfo do
-    if v = :persistent_term.get({:ex_sqlean, :fullinfo}, nil) do
+    if v = ExSqlean.CacheETS.get(:fullinfo) do
       v
     else
       v = {os_type(), cpu_type()}
-      :persistent_term.put({:ex_sqlean, :fullinfo}, v)
+      ExSqlean.CacheETS.put(:fullinfo, v)
       v
     end
   end
