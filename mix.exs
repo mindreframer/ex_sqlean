@@ -4,7 +4,7 @@ defmodule ExSqlean.MixProject do
   def project do
     [
       app: :ex_sqlean,
-      version: "0.8.4",
+      version: "0.8.5",
       elixir: "~> 1.12",
       deps: deps(),
       package: package(),
@@ -25,7 +25,7 @@ defmodule ExSqlean.MixProject do
   defp package() do
     [
       # These are the default files included in the package
-      files: ~w(lib priv .formatter.exs mix.exs README* LICENSE*),
+      files: ~w(lib priv .formatter.exs mix.exs README* LICENSE* CHANGELOG*),
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/mindreframer/ex_sqlean"}
     ]
