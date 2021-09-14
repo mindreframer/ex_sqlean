@@ -19,7 +19,7 @@ defmodule ExSqlean.CpuInfo do
   end
 
   defp cpu_type do
-    cpu_type_sub((os_type()))
+    cpu_type_sub(os_type())
   end
 
   defp cpu_type_sub(os_type) when os_type in [:windows, :linux, :unknown] do
@@ -28,6 +28,7 @@ defmodule ExSqlean.CpuInfo do
 
   defp cpu_type_sub(os_type) when os_type in [:freebsd, :macos] do
     confirm_executable("uname")
+
     case System.cmd("uname", ["-m"]) do
       {result, 0} -> result |> String.trim()
       _ -> raise RuntimeError, message: "uname does not work."

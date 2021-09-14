@@ -10,7 +10,7 @@ defmodule ExSqlean.MixProject do
       package: package(),
       source_url: "https://github.com/mindreframer/ex_sqlean",
       description: "Precompiled SQLite extensions, to be used with `exqlite`.",
-      start_permanent: Mix.env() == :prod,
+      start_permanent: Mix.env() == :prod
     ]
   end
 
