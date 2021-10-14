@@ -1,7 +1,7 @@
 #/usr/bin/env bash
 
 
-VERSION=0.8.4
+VERSION=0.8.5
 EXTNAME=".dll" # dylib | so
 FINALEXTNAME=".dll"
 
@@ -12,6 +12,7 @@ download(){
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/memstat$EXTNAME -O memstat$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/re$EXTNAME -O re$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/series$EXTNAME -O series$FINALEXTNAME
+    wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/spellfix$EXTNAME -O spellfix$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/stats$EXTNAME -O stats$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/text$EXTNAME -O text$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/unicode$EXTNAME -O unicode$FINALEXTNAME
