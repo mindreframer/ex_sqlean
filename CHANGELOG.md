@@ -1,3 +1,7 @@
+### 0.8.6
+
+- new extension: spellfix
+
 ### 0.8.5
 
 - also include binaries for win-32 binaries + some code adjustments for downloading them
