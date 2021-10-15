@@ -6,19 +6,7 @@ defmodule ExSqlean do
   alias ExSqlean.CpuInfo
 
   # https://github.com/mindreframer/sqlean/blob/forked/gen/generateMakefile.js#L4
-  @extensions [
-    "crypto",
-    "json1",
-    "math",
-    "memstat",
-    "re",
-    "series",
-    "spellfix",
-    "stats",
-    "text",
-    "unicode",
-    "vsv"
-  ]
+  @extensions ExSqlean.Extensions.all()
   def extensions do
     @extensions
   end
