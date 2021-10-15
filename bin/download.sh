@@ -1,11 +1,12 @@
 #/usr/bin/env bash
 
 
-VERSION=0.8.7-3360
+VERSION=0.8.8-3360
 EXTNAME=".dll" # dylib | so
 FINALEXTNAME=".dll"
 
 download(){
+    wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/bloom_filter$EXTNAME -O bloom_filter$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/crypto$EXTNAME -O crypto$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/ipaddr$EXTNAME -O ipaddr$FINALEXTNAME
     wget https://github.com/mindreframer/sqlean/releases/download/$VERSION/json1$EXTNAME -O json1$FINALEXTNAME
