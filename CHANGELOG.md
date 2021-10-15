@@ -1,3 +1,8 @@
+### 0.8.8
+
+- Update to sqlean 0.8.8-3360 (https://github.com/mindreframer/sqlean/releases/tag/0.8.8-3360)
+- https://github.com/mindreframer/sqlean/blob/forked/CHANGELOG.md#088-3360
+
 ### 0.8.7
 
 - Update to sqlean 0.8.7-3360 (https://github.com/mindreframer/sqlean/releases/tag/0.8.7-3360)

@@ -4,7 +4,7 @@ defmodule ExSqlean.MixProject do
   def project do
     [
       app: :ex_sqlean,
-      version: "0.8.7",
+      version: "0.8.8",
       elixir: "~> 1.12",
       deps: deps(),
       package: package(),
